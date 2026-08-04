@@ -44,13 +44,24 @@ release archives should include SHA-256 checksums.
 
 ## Installation
 
-A release contains two deliverables:
+The release archive contains the client folders at its root and the dedicated-
+server folders under `Server`:
 
-1. `PirateSignals` goes in `ue4ss/Mods` on the client or dedicated server.
-2. `PirateSignalsTransport` goes in `R5/Content/Paks/LogicMods` on both.
+```text
+Pirate Signals/
+|-- PirateSignals/                 client UE4SS mod
+|-- PirateSignalsTransport/        client transport
+`-- Server/
+    |-- PirateSignals/             dedicated-server UE4SS mod
+    `-- PirateSignalsTransport/    dedicated-server transport
+```
 
-The client and server use different `PirateSignals` contents but retain the
-same folder name in their respective UE4SS installations.
+For the client, copy the root `PirateSignals` folder to `ue4ss/Mods` and the
+root `PirateSignalsTransport` folder to `R5/Content/Paks/LogicMods`.
+
+For the dedicated server, copy `Server/PirateSignals` to the server's
+`ue4ss/Mods` folder and `Server/PirateSignalsTransport` to the server's
+`R5/Content/Paks/LogicMods` folder.
 
 ## License
 
