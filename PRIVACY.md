@@ -20,10 +20,10 @@ The dedicated-server mod keeps at most 100 messages in memory. That history is
 not written to a database by Pirate Signals and clears when the server process
 restarts.
 
-The current diagnostic client logging writes received chat text to the local
-UE4SS log. Server diagnostics record accepted message metadata and the visible
-player name, but not the message body. Server operators and players may also
-use independent game, operating-system, moderation, logging, or recording
+Pirate Signals diagnostics record message metadata but do not write message
+bodies to the client or server UE4SS log. Server diagnostics include the
+visible player name for an accepted message. Server operators and players may
+also use independent game, operating-system, moderation, logging, or recording
 tools outside this mod.
 
 ## Network metadata

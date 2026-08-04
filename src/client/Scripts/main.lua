@@ -308,7 +308,7 @@ local function handle_client_frame(actor, payload)
         native_sync_history()
         log(string.format("READY protocol=%s history=%d last_id=%d", PROTOCOL, #history, end_id))
         for _, item in ipairs(history) do
-            log(string.format("HISTORY id=%d <%s> %s", item.id, item.name, item.text))
+            log(string.format("HISTORY id=%d received", item.id))
         end
         return
     end
@@ -319,7 +319,7 @@ local function handle_client_frame(actor, payload)
         ui_notice = ""
         append_history(item)
         native_set_ready(true)
-        log(string.format("MESSAGE id=%d <%s> %s", item.id, item.name, item.text))
+        log(string.format("MESSAGE id=%d received", item.id))
     end
 end
 
@@ -459,7 +459,7 @@ end)
 RegisterConsoleCommandHandler("wrchat_history", function()
     log("history count=" .. tostring(#history))
     for _, item in ipairs(history) do
-        log(string.format("HISTORY id=%d <%s> %s", item.id, item.name, item.text))
+        log(string.format("HISTORY id=%d received", item.id))
     end
     return true
 end)
