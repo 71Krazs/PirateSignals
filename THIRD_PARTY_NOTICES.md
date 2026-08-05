@@ -7,5 +7,4 @@ independent open-source projects:
 - Kiero, Copyright (c) 2014-2021 Rebzzel — MIT License.
 - MinHook, Copyright (c) 2009-2017 Tsuda Kageyu — 2-clause BSD License.
 
-Their complete license texts are included in the `licenses` directory. None of
-these dependencies contains code from the third-party WindroseChat mod.
+Their complete license texts are included in the `licenses` directory.
