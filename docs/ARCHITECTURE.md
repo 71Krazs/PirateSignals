@@ -14,10 +14,6 @@ by a connected player. It derives the visible identity from that player's
 server-side `PlayerState`, validates the text and rate limit, adds the message
 to bounded memory history, and broadcasts it.
 
-Protocol version 1 uses the `WRCHAT` internal namespace. The cooked asset path
-still contains `WindroseChatTransport` as a compatibility identifier from the
-private feasibility phase; it is not a connection to, dependency on, or reuse
-of the unrelated third-party WindroseChat mod.
 
 ## Frame types
 
