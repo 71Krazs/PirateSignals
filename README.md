@@ -1,13 +1,11 @@
 # Pirate Signals
 
-Pirate Signals is an independent, server-authoritative public chat mod for
+Pirate Signals is an independent, server authoritative public chat mod for
 Windrose dedicated servers. Messages use the game's existing client-to-server
 connection. The mod does not use an external relay, domain, account system,
 extra listening port, or third-party chat service.
 
-This project was developed independently. It does not contain or use the
-third-party WindroseChat mod's code, binary, protocol, relay, or identity
-logic.
+This project was developed independently.
 
 ## Current behavior
 
